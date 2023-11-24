@@ -1,0 +1,61 @@
+Language: Cpp
+IndentWidth: 4
+ColumnLimit: 120
+
+MaxEmptyLinesToKeep: 1
+KeepEmptyLinesAtTheStartOfBlocks: false
+AccessModifierOffset: -4
+EmptyLineAfterAccessModifier: Never # Never, Leave, Always
+EmptyLineBeforeAccessModifier: LogicalBlock # Never, Leave, LogicalBlock, Always
+IndentAccessModifiers: false
+IndentCaseBlocks: false
+IndentCaseLabels: false
+IndentExternBlock: NoIndent # AfterExternBlock, NoIndent, Indent
+IndentGotoLabels: false
+IndentPPDirectives: None # None, AfterHash, BeforeHash
+IndentWrappedFunctionNames: true
+
+AlignTrailingComments: true
+SpacesBeforeTrailingComments: 1
+SpacesInLineCommentPrefix:
+  Maximum: 1
+  Minimum: 0
+
+#clang-format15: InsertBraces: false # braces should always be inserted, but this option is too dangerous
+BraceWrapping:
+  AfterCaseLabel:           false
+  AfterClass:               false
+  AfterControlStatement:    false
+  AfterEnum:                false
+  AfterFunction:            true
+  AfterNamespace:           false
+  AfterObjCDeclaration:     false
+  AfterStruct:              false
+  AfterUnion:               false
+  AfterExternBlock:         false
+  BeforeCatch:              true
+  BeforeElse:               true
+  BeforeLambdaBody:         false
+  BeforeWhile:              false
+  IndentBraces:             false
+  SplitEmptyFunction:       false
+  SplitEmptyRecord:         true # (e.g., class, struct or union)
+  SplitEmptyNamespace:      true
+BreakBeforeBraces: Custom
+
+DerivePointerAlignment: false
+PointerAlignment: Left # Left, Middle, Right
+ReferenceAlignment: Pointer # Pointer, Left, Middle, Right
+#clang-format14: QualifierAlignment: Left # Leave, Left, Right, Custom
+
+FixNamespaceComments: true
+NamespaceIndentation: None # None, Inner, All
+ShortNamespaceLines: 0
+
+AllowShortBlocksOnASingleLine: Empty # Never, Empty, Always
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortEnumsOnASingleLine : true
+AllowShortFunctionsOnASingleLine: Empty # None, InlineOnly, Empty, Inline, All
+AllowShortIfStatementsOnASingleLine: Never # Never, WithoutElse, OnlyFirstIf, AllIfsAndElse
+AllowShortLambdasOnASingleLine: All # None, Empty, Inline, All
+AllowShortLoopsOnASingleLine: true
